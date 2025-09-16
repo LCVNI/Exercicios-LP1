@@ -1,3 +1,4 @@
+//Programa que troca valores de duas variáveis usando ponteiro
 #include<stdio.h>
 #include<stdlib.h>
 void trocar(int *x,int *y){
