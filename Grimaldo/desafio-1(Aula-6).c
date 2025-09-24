@@ -6,27 +6,15 @@ a função deve retornar -1.*/
 #include<stdio.h>
 int primeiro_exclusivo(int arr1[], int arr2[], int n)
 {
-    int aux;
-    //Ordenar o vetor
-    for(int i = 0; i < n-1; i++){
-        if(arr1[i] < arr1[i+1]){
-            aux=arr1[i];
-            arr1[i]=arr1[i+1];
-            arr1[i+1]=aux;
-        }
-        if(arr2[i] < arr2[i+1]){
-            aux=arr2[i];
-            arr2[i]=arr2[i+1];
-            arr2[i+1]=aux;
-        }
-    }
     //Comparar valores
     for(int i = 0; i < n; i++){
+        for(int j=0; j < n; j++){
         if(arr1[i] == arr2[i]){
              continue;
         }
         else{
             return arr1[i];
+        }
         }
     }
     return -1;
