@@ -18,10 +18,10 @@ typedef struct {
 void adicionarAluno(){
 
     for(int i=0; i < TAM_ARR; i++){
-        alunos{
-
+        lp1{
+            
         }
-    }
+    };
 }
 
 int main(){
